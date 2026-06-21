@@ -1,0 +1,67 @@
+/* glowlay stylesheet */
+
+.overlay-window {
+    background-color: transparent;
+}
+
+.dashboard-container {
+    background-color: rgba(8, 12, 20, {bg_alpha});
+    border-radius: 20px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    /* 青白く美しく光が漏れるネオングロー効果 */
+    box-shadow: 0 0 24px rgba(0, 229, 255, 0.5);
+    /* ウィンドウの外枠で影がクリップされないようにマージンを設定 */
+    margin: 20px;
+    padding: 14px;
+}
+
+.dashboard-title {
+    font-size: 18px; /* タイトルはそのまま維持 */
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+.dashboard-subtitle {
+    font-size: {font_size_subtitle}px;
+    font-weight: 700;
+    color: #648299;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.widget-label {
+    font-size: {font_size_label}px;
+    font-weight: 700;
+    color: #8fa0b0;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.widget-value-label {
+    font-size: {font_size_val_label}px;
+    font-weight: 800;
+    color: #00e5ff;
+}
+
+.info-box-container {
+    background-color: rgba(5, 10, 18, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 229, 255, 0.1);
+    padding: 10px;
+    margin-top: 4px;
+}
+
+.info-title {
+    font-size: {font_size_label}px;
+    font-weight: 700;
+    color: #8fa0b0;
+}
+
+.info-value {
+    font-size: {font_size_info_val}px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: monospace;
+}

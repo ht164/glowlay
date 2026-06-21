@@ -1,0 +1,35 @@
+# glowlay configuration
+
+[window]
+width = 210
+height = 460
+# 表示位置の基準（"top-left", "top-right", "bottom-left", "bottom-right"）
+anchor = "top-right"
+# 基準点からの余白（マージン）座標
+x = 40
+y = 40
+
+[style]
+# 背景の不透明度（0.0 が完全透明、1.0 が完全不透明。デフォルト 0.4）
+bg_alpha = 0.4
+# フォントサイズの倍率（1.0 が標準、デフォルト 1.2）
+font_scale = 1.2
+
+[monitor]
+# 更新間隔（ミリ秒）
+update_interval_ms = 1000
+
+[features]
+enable_cpu = true
+enable_mem = true
+enable_gpu = true
+enable_storage = true
+enable_network = true
+
+[network]
+# 監視するネットワークインターフェース（空なら最初に見つかったアクティブなものを自動選択）
+interface = ""
+
+[storage]
+# 監視する複数のマウントポイント（複数指定すると、それぞれの使用量が並んで表示されます）
+paths = ["/", "/home"]
